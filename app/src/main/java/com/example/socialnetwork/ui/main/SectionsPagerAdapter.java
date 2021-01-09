@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.socialnetwork.FriendFragment;
-import com.example.socialnetwork.HomeFragment;
+import com.example.socialnetwork.HomeBlankFragment;
 import com.example.socialnetwork.NotifacitonFragment;
 import com.example.socialnetwork.R;
 
@@ -34,7 +34,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position)
         {
             case 0:
-                fragment = new HomeFragment();
+                fragment = new HomeBlankFragment();
                 break;
             case 1:
                 fragment = new NotifacitonFragment();

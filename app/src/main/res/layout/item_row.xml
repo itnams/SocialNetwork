@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#FFFFFF"
+    >
+    <ImageView
+        android:id="@+id/imagepost"
+        android:layout_width="60dp"
+        android:padding="10dp"
+        android:src="@drawable/home"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagepost"
+        android:text="Full Name"
+        android:textStyle="bold"
+        android:id="@+id/tvFullNamepost"
+        android:layout_marginStart="10dp"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian đăng bài"
+        android:id="@+id/timePost"
+        android:layout_below="@id/tvFullNamepost"
+        android:layout_toRightOf="@id/imagepost"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailPost"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/imagepost"
+        android:text="Chi tiết bài đăng"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 like"
+        android:textColor="#a9a9a9"
+        android:layout_marginStart="5dp"
+        android:id="@+id/tvLike"
+        android:layout_below="@id/detailPost"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLike"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/like"
+            android:layout_marginStart="5dp"
+            android:layout_height="30dp"/></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/cmt"
+                android:layout_marginStart="5dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
