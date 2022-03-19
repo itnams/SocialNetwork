@@ -10,7 +10,7 @@ public class dataPost {
         this.time = time;
         this.detail = detail;
     }
-
+sssssss
     public dataPost() {
     }
 
